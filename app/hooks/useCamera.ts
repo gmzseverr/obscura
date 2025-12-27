@@ -1,8 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef } from 'react'
-import { CameraState } from '../types'
-
+import type { CameraState } from '../types'
 
 export function useCamera() {
   const [cameraState, setCameraState] = useState<CameraState>({
@@ -18,7 +17,7 @@ export function useCamera() {
       const stream = await navigator.mediaDevices.getUserMedia({
         video: {
           width: { ideal: 1280 },
-          height: { ideal: 1920 },
+          height: { ideal: 1280 },
           facingMode: 'user',
         },
       })
@@ -33,6 +32,7 @@ export function useCamera() {
         videoRef.current.srcObject = stream
       }
     } catch (err) {
+      console.error('Camera error:', err) // Debug için
       setCameraState({
         stream: null,
         error: 'Camera access denied. Please allow camera permission.',
@@ -52,12 +52,13 @@ export function useCamera() {
     }
   }
 
-  // Cleanup on unmount
   useEffect(() => {
     return () => {
-      stopCamera()
+      if (cameraState.stream) {
+        cameraState.stream.getTracks().forEach(track => track.stop())
+      }
     }
-  }, [])
+  }, [cameraState.stream])
 
   return {
     videoRef,
