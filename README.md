@@ -25,7 +25,7 @@ A retro analog photo booth web application that captures four sequential photos 
 - **Canvas:** HTML5 Canvas for image processing
 
 
-## 📖 Usage
+##  Usage
 
 1. **Landing Page** - Click "BEGIN SESSION" to start
 2. **Camera Preview** - Allow camera permissions when prompted
@@ -52,20 +52,14 @@ A retro analog photo booth web application that captures four sequential photos 
 - Date stamp footer
 - GSAP elastic bounce animation
 
-### Analog Effects
-- Film grain animation
-- CRT scanlines
-- Vignette overlay
-- Paper texture
 
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - [ ] Multiple filter options (sepia, color, vintage)
 - [ ] Custom frame/border selection
 - [ ] Social media share integration
 - [ ] Photo gallery with localStorage
-- [ ] QR code generation for mobile sharing
 - [ ] Print-optimized PDF export
 - [ ] Sound effects (shutter, countdown beep)
 - [ ] Multi-language support
@@ -80,9 +74,9 @@ MIT License - feel free to use this project for personal or commercial purposes.
 
 
 **Your Name**
-- Portfolio: [yourwebsite.com](https://portfolio-gamze.vercel.app)
-- GitHub: [@yourusername](https://github.com/gmzseverr)
-- LinkedIn: [Your Name](https://www.linkedin.com/in/gamzesever/)
+- Portfolio: [https://portfolio-gamze.vercel.app](https://portfolio-gamze.vercel.app)
+- GitHub: [@gmzseverr](https://github.com/gmzseverr)
+- LinkedIn: [Gamze Sever](https://www.linkedin.com/in/gamzesever/)
 
 ##  Acknowledgments
 

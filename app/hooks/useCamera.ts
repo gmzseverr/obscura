@@ -40,7 +40,7 @@ export function useCamera() {
       })
     }
   }
-
+//stop camera
   const stopCamera = () => {
     if (cameraState.stream) {
       cameraState.stream.getTracks().forEach(track => track.stop())

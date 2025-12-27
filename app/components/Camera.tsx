@@ -142,7 +142,7 @@ export default function Camera({ onComplete, onBack }: CameraProps) {
                     <div className="text-right">
                       <div className="mb-0.5">{formatTime()}</div>
                       <div className="text-white/60 text-[8px]">
-                        ISO 400
+                       - ISO 400 -
                       </div>
                     </div>
                   </div>
